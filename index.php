@@ -43,60 +43,29 @@
 			<!-- Main content START -->
 			<div class="row">
 				<div class="col-md-7">
-
+<?php  
+require ($_SERVER["DOCUMENT_ROOT"] . '/include/database.inc');
+require ($_SERVER["DOCUMENT_ROOT"] . '/portlets/classes.inc');
+?>
 					<!--  -->
 					<div class="column" id="left">
-						<div class="portlet ui-widget ui-widget-content ui-helper-clearfix ui-corner-all" id="item_1">
-							<div class="portlet-header ui-widget-header ui-corner-all">
-								Feeds 1<span class="ui-icon ui-icon-minusthick"></span>
-							</div>
-
-							<div class="portlet-content">
-								Lorem ipsum dolor sit amet, consectetuer adipiscing elit
-							</div>
-						</div>
-						<div class="portlet ui-widget ui-widget-content ui-helper-clearfix ui-corner-all" id="item_2">
-							<div class="portlet-header ui-widget-header ui-corner-all">
-								News 2<span class="ui-icon ui-icon-minusthick"></span>
-							</div>
-
-							<div class="portlet-content">
-								Lorem ipsum dolor sit amet, consectetuer adipiscing elit
-							</div>
-						</div>
+<?php
+print_portlets('left');
+?>
 					</div>
+
 
 					<div class="column" id="middle">
-						<div class="portlet ui-widget ui-widget-content ui-helper-clearfix ui-corner-all" id="item_3">
-							<div class="portlet-header ui-widget-header ui-corner-all">
-								Shopping 3<span class="ui-icon ui-icon-minusthick"></span>
-							</div>
-
-							<div class="portlet-content">
-								Lorem ipsum dolor sit amet, consectetuer adipiscing elit
-							</div>
-						</div>
+<?php
+print_portlets('middle');
+?>
 					</div>
 
+
 					<div class="column" id="right">
-						<div class="portlet ui-widget ui-widget-content ui-helper-clearfix ui-corner-all" id="item_4">
-							<div class="portlet-header ui-widget-header ui-corner-all">
-								Links 4<span class="ui-icon ui-icon-minusthick"></span>
-							</div>
-
-							<div class="portlet-content">
-								Lorem ipsum dolor sit amet, consectetuer adipiscing elit
-							</div>
-						</div>
-						<div class="portlet ui-widget ui-widget-content ui-helper-clearfix ui-corner-all" id="item_5">
-							<div class="portlet-header ui-widget-header ui-corner-all">
-								Images 5<span class="ui-icon ui-icon-minusthick"></span>
-							</div>
-
-							<div class="portlet-content">
-								Lorem ipsum dolor sit amet, consectetuer adipiscing elit
-							</div>
-						</div>
+<?php
+print_portlets('right');					
+?>
 					</div>
 					<!--  -->
 
