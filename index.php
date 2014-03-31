@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Nikola Bodroži&#263; &laquo; My Portfolio</title>
+		<title>Nikola Bodroži&#263; &raquo; Portfolio</title>
 		<!-- Bootstrap -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<!-- jQuery UI -->
@@ -20,7 +20,7 @@
 				  background-color:#fff;
 				  border:1px solid black;
 				  opacity:0.6;
-				  filter:alpha(opacity=60); /* For IE8 and earlier */
+				  filter:alpha(opacity=60); /* For IE8 and earlier */				
 			}
 		</style>
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -35,16 +35,17 @@
 		<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 			<div class="container">
 				<div class="navbar-header">
-					<a class="navbar-brand" href="#">Project name</a>
+					<a class="navbar-brand" href="http://nikolabodr.com/">Back to blog</a>
 				</div>
 			</div>
 		</div>
 		<!-- Menu END -->
+
 		<div class="container" id="wrapp">
 			<header>
 				<div class="well">
-					<h1>jQuery UI Portlets</h1>
-					<h3>Portfolio by Nikola Bodro&#382;i&#263;</h3>
+					<h1>Nikola Bodroži&#263; &raquo; Portfolio</h1>
+					<h3>jQuery UI Portlets with PHP backend</h3>
 				</div>
 			</header>
 			<!-- Main content START -->
@@ -54,7 +55,8 @@
   <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
   <strong>Updating...</strong> Please wait.
 </div>
-<?php
+
+<?php  
 require ($_SERVER["DOCUMENT_ROOT"] . '/include/database.inc');
 require ('classes.inc');
 ?>
@@ -65,23 +67,29 @@ require ('classes.inc');
 new PrintPortlet('left');
 ?>
 					</div>
+
+
 					<div class="column" id="middle">
 <?php
 new PrintPortlet('middle');
 ?>
 					</div>
+
+
 					<div class="column" id="right">
 <?php
-new PrintPortlet('right');
+new PrintPortlet('right');					
 ?>
 					</div>
 		    <div style="clear:both;"></div>
-</div>
+</div>					
 					<!--  -->
+
 				</div>
 				<div class="col-md-5">
-					<pre id='so' style="padding:5px;font-size:medium;"> <div id="info_cols" style="padding:5px;font-size:small;"><p>placeholder for debug</p></div>	</pre>
+					<!-- <pre id='so' style="padding:5px;font-size:medium;"> <div id="info_cols" style="padding:5px;font-size:small;"><p>placeholder for debug</p></div>	</pre> -->
 				</div>
+
 			</div>
 			<!-- Main content END -->
 			<footer>
@@ -92,6 +100,7 @@ new PrintPortlet('right');
 				</div>
 			</footer>
 		</div>
+
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="js/jquery.min.js"></script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
