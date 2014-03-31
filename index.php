@@ -14,6 +14,14 @@
 			#wrapp {
 				margin-top: 80px;
 			}
+			/* opacity and inactive class */
+			.opacityinact{
+				  pointer-events: none;
+				  background-color:#fff;
+				  border:1px solid black;
+				  opacity:0.6;
+				  filter:alpha(opacity=60); /* For IE8 and earlier */				
+			}
 		</style>
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -32,7 +40,6 @@
 			</div>
 		</div>
 		<!-- Menu END -->
-
 		<div class="container" id="wrapp">
 			<header>
 				<div class="well">
@@ -43,37 +50,38 @@
 			<!-- Main content START -->
 			<div class="row">
 				<div class="col-md-7">
+<div id="balert" class="alert alert-warning alert-dismissable" style="display:none;">
+  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+  <strong>Updating...</strong> Please wait.
+</div>
 <?php  
 require ($_SERVER["DOCUMENT_ROOT"] . '/include/database.inc');
 require ($_SERVER["DOCUMENT_ROOT"] . '/portlets/classes.inc');
 ?>
 					<!--  -->
+<div id="colholder">
 					<div class="column" id="left">
 <?php
 print_portlets('left');
 ?>
 					</div>
-
-
 					<div class="column" id="middle">
 <?php
 print_portlets('middle');
 ?>
 					</div>
-
-
 					<div class="column" id="right">
 <?php
 print_portlets('right');					
 ?>
 					</div>
+		    <div style="clear:both;"></div>
+</div>					
 					<!--  -->
-
 				</div>
 				<div class="col-md-5">
 					<pre id='so' style="padding:5px;font-size:medium;"> <div id="info_cols" style="padding:5px;font-size:small;"><p>placeholder for debug</p></div>	</pre>
 				</div>
-
 			</div>
 			<!-- Main content END -->
 			<footer>
@@ -84,7 +92,6 @@ print_portlets('right');
 				</div>
 			</footer>
 		</div>
-
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="js/jquery.min.js"></script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
