@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Nikola Bodroži&#263; &raquo; Portfolio</title>
+		<title>Nikola Nikola Bodro&#382;i&#263; &raquo; Portfolio</title>
 		<!-- Bootstrap -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<!-- jQuery UI -->
@@ -87,7 +87,7 @@ new PrintPortlet('right');
 
 				</div>
 				<div class="col-md-5">
-					
+					<p>Move portlets or click on plus / minus sign. AJAX calls and PHP scripts will save portlets state in MySQL database.</p>
 				</div>
 
 			</div>
