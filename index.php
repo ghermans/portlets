@@ -24,7 +24,7 @@
 			}
 		</style>
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!-- WARNING: Respond.js doesnot work if you view the page via file:// -->
 		<!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -44,7 +44,7 @@
 		<div class="container" id="wrapp">
 			<header>
 				<div class="well">
-					<h1>Nikola Bodroži&#263; &raquo; Portfolio</h1>
+					<h1>Nikola Bodro&#382;i&#263; &raquo; Portfolio</h1>
 					<h3>jQuery UI Portlets with PHP backend</h3>
 				</div>
 			</header>
@@ -87,7 +87,7 @@ new PrintPortlet('right');
 
 				</div>
 				<div class="col-md-5">
-					<!-- <pre id='so' style="padding:5px;font-size:medium;"> <div id="info_cols" style="padding:5px;font-size:small;"><p>placeholder for debug</p></div>	</pre> -->
+					
 				</div>
 
 			</div>
@@ -95,13 +95,13 @@ new PrintPortlet('right');
 			<footer>
 				<div class="well well-sm">
 					<p  class="text-center" style="margin-bottom: 0px;">
-						<strong>&copy; Nikola Bodroži&#263; <?php echo date('Y');?></strong>
+						<strong>&copy; Nikola Bodro&#382;i&#263; <?php echo date("Y");?></strong>
 					</p>
 				</div>
 			</footer>
 		</div>
 
-		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<!-- jQuery (necessary for Bootstraps JavaScript plugins) -->
 		<script src="js/jquery.min.js"></script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
 		<script src="js/bootstrap.min.js"></script>
