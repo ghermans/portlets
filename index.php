@@ -20,7 +20,7 @@
 				  background-color:#fff;
 				  border:1px solid black;
 				  opacity:0.6;
-				  filter:alpha(opacity=60); /* For IE8 and earlier */				
+				  filter:alpha(opacity=60); /* For IE8 and earlier */
 			}
 		</style>
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -54,29 +54,29 @@
   <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
   <strong>Updating...</strong> Please wait.
 </div>
-<?php  
+<?php
 require ($_SERVER["DOCUMENT_ROOT"] . '/include/database.inc');
-require ($_SERVER["DOCUMENT_ROOT"] . '/portlets/classes.inc');
+require ('classes.inc');
 ?>
 					<!--  -->
 <div id="colholder">
 					<div class="column" id="left">
 <?php
-print_portlets('left');
+new PrintPortlet('left');
 ?>
 					</div>
 					<div class="column" id="middle">
 <?php
-print_portlets('middle');
+new PrintPortlet('middle');
 ?>
 					</div>
 					<div class="column" id="right">
 <?php
-print_portlets('right');					
+new PrintPortlet('right');
 ?>
 					</div>
 		    <div style="clear:both;"></div>
-</div>					
+</div>
 					<!--  -->
 				</div>
 				<div class="col-md-5">
@@ -87,7 +87,7 @@ print_portlets('right');
 			<footer>
 				<div class="well well-sm">
 					<p  class="text-center" style="margin-bottom: 0px;">
-						<strong> Nikola Bodroži&#263; &laquo; &copy; 2014</strong>
+						<strong>&copy; Nikola Bodroži&#263; <?php echo date('Y');?></strong>
 					</p>
 				</div>
 			</footer>

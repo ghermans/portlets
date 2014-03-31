@@ -5,7 +5,6 @@ if ($_GET['sendSigns'] == 'yes') {
 	$id = $_GET['portlet_id'];
 	$sign = $_GET['sign'];
 	$q = " UPDATE `nb_portlets` SET `sign` = '$sign' WHERE `name` = '$id' ;";
-	echo "$q";
 	$res = $conn -> query($q);
 	if ($res === TRUE)
 		echo "Updated sign for $id";
