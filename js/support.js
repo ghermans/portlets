@@ -9,11 +9,11 @@
 					var sign = $(this).hasClass("ui-icon-plusthick") ? "plus" : "minus";
 					var portlet_id = $(this).parent().parent().attr('id');
 					$('#colholder').addClass('opacityinact');
-					$('#balert').show();		
-					$.get("ajax.php"+'?sendSigns=yes&portlet_id='+portlet_id+'&sign='+sign, function(data){ 
-					     $('#so').html(data); 
-					     $('#colholder').removeClass('opacityinact');	
-					     $('#balert').hide();							     							
+					$('#balert').show();
+					$.get("ajax.php"+'?sendSigns=yes&portlet_id='+portlet_id+'&sign='+sign, function(data){
+					     $('#so').html(data);
+					     $('#colholder').removeClass('opacityinact');
+					     $('#balert').hide();
 					} );
 				});
 				$(".column").disableSelection();
@@ -34,8 +34,13 @@
 						i++;
 					});
 					byColumns = '?sendColumns=yes' + byColumns;
-					$.get("ajax.php"+byColumns, function(data){ $('#so').text(data);} );
-					//$('#info_cols').html(byColumns);
+					$('#colholder').addClass('opacityinact');
+					$('#balert').show();
+					$.get("ajax.php"+byColumns, function(data){
+							$('#so').text(data);
+							$('#colholder').removeClass('opacityinact');
+							$('#balert').hide();
+						} );
 					byColumns = "";
 				});
 			});
