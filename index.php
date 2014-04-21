@@ -58,7 +58,7 @@
 
 <?php  
 require ($_SERVER["DOCUMENT_ROOT"] . '/include/database.inc');
-require ('classes.inc');
+require ($_SERVER["DOCUMENT_ROOT"] . '/include/classes.inc');
 ?>
 					<!--  -->
 <div id="colholder">
