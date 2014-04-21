@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Nikola Nikola Bodro&#382;i&#263; &raquo; Portfolio</title>
+		<title>Nikola Bodro&#382;i&#263; &raquo; My Portfolio :: jQuery UI Portlets</title>
 		<!-- Bootstrap -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<!-- jQuery UI -->
@@ -24,7 +24,7 @@
 			}
 		</style>
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-		<!-- WARNING: Respond.js doesnot work if you view the page via file:// -->
+		<!-- WARNING: Respond.js doesnt work if you view the page via file:// -->
 		<!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -95,19 +95,19 @@ new PrintPortlet('right');
 			<footer>
 				<div class="well well-sm">
 					<p  class="text-center" style="margin-bottom: 0px;">
-						<strong>&copy; Nikola Bodro&#382;i&#263; <?php echo date("Y");?></strong>
+						<strong>&copy; Nikola Bodro&#382;i&#263; <?php echo date('Y');?></strong>
 					</p>
 				</div>
 			</footer>
 		</div>
 
-		<!-- jQuery (necessary for Bootstraps JavaScript plugins) -->
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
 		<script src="js/bootstrap.min.js"></script>
 		<!-- jQuery UI customized JavaScript -->
 		<script src="js/jquery-ui-1.10.4.custom.min.js"></script>
 		<!-- Portlets -->
-		<script src="js/support.js"></script>
+		<script src="js/support.js"></script>        
 	</body>
 </html>
