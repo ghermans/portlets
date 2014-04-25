@@ -57,8 +57,8 @@
 </div>
 
 <?php  
-require ($_SERVER["DOCUMENT_ROOT"] . '/include/database.inc');
-require ($_SERVER["DOCUMENT_ROOT"] . '/include/classes.inc');
+require ($_SERVER["DOCUMENT_ROOT"] . '/include/connect2db.inc');
+require ('classes.inc');
 ?>
 					<!--  -->
 <div id="colholder">
@@ -83,11 +83,12 @@ new PrintPortlet('right');
 					</div>
 		    <div style="clear:both;"></div>
 </div>					
-					<!--  -->
+					<!--   -->
 
 				</div>
 				<div class="col-md-5">
 					<p>Move portlets or click on plus / minus sign. AJAX calls and PHP scripts will save portlets state in MySQL database.</p>
+					<p>Source code is at GitHub <a href="https://github.com/nikola-bodrozic/portlets/commits/master" target="_blank">https://github.com/nikola-bodrozic/portlets/commits/master</a></p>					
 				</div>
 
 			</div>
@@ -102,12 +103,27 @@ new PrintPortlet('right');
 		</div>
 
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="js/jquery.min.js"></script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
 		<script src="js/bootstrap.min.js"></script>
 		<!-- jQuery UI customized JavaScript -->
 		<script src="js/jquery-ui-1.10.4.custom.min.js"></script>
 		<!-- Portlets -->
-		<script src="js/support.js"></script>        
+		<script src="js/support.js"></script>
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=9434471; 
+var sc_invisible=1; 
+var sc_security="29776d49"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="free hit
+
+counters" href="http://statcounter.com/free-hit-counter/" target="_blank"><img class="statcounter" src="http://c.statcounter.com/9434471/0/29776d49/1/" alt="free hit counters"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->        
 	</body>
 </html>
